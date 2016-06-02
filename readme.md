@@ -8,6 +8,12 @@ Market: SF
 
 # CSS Selectors Basics
 
+**Hook:**
+
+http://www.sportsmanssupplyco.com/
+
+How would everyone fix this site?
+
 ## Why is this important?
 After this workshop, developers should be able to hand code a simple website from scratch with HTML and CSS. Arguably, you don't need to know this because nobody really starts from scratch anymore. However, this should solidify your conceptual model of how these things go together and improving your specific knowledge of some fundamental CSS properties so you can debug CSS more quickly.
 
@@ -43,7 +49,12 @@ CSS stands for:
 
 It provides the browser with precise instructions on how to style each element we want displayed on the page and can affect the text format - like font, size, color - the size and position of various objects on the page, colors, spacial layouts, etc. There are literally hundreds of different properties we can use to style HTML elements on a webpage.
 
-## Let's write some CSS - Catch Up
+**CFU:**
+Fist-to-five (before): How comfortable would you be implementing styles in your webpage?
+
+## Let's write some CSS - Catch Up (30 min)
+
+**Reiterate half-mast concept**
 
 Create a new folder with a HTML page:
 
@@ -387,8 +398,10 @@ div {
 
 Sweet!
 
+**CFU:**
+Fist-to-five (after): How comfortable would you be implementing styles in your webpage?
 
-## Style using Classes and IDs - Independent Practice
+## Style using Classes and IDs - Independent Practice (10 min)
 
 Using what we've done in class, open the [starter code](starter-code) provided and see how far you can get through these exercises in 10 minutes:
 
@@ -424,7 +437,7 @@ Using what we've done in class, open the [starter code](starter-code) provided a
     - bird - lightGray
     - fish - lightYellow
 
-#### Multiple classes and multiple elements - Catch Up
+#### Multiple classes and multiple elements - Catch Up (20 min)
 
 You can also chain classes together, applying several classes to one element:
 
@@ -599,7 +612,7 @@ Now, all our list items are centered but the top item has a different font than 
 
 
 
-## Specificity in CSS - Intro
+## Specificity in CSS - Intro (10 min)
 
 One of the most important concepts with CSS is specificity. Imagine you select an element by it's class and give it some style; then, on the next line, you select the same element by it's element name and it's ID - how does the browser know what style to apply?  Well, every element gets a score and it's this score that dictates what CSS property is applied.
 
