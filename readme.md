@@ -333,7 +333,7 @@ If I refresh my browser, I see the updates.  The browser selects all elements on
 
 ####The ID Selector
 
-The ID selector uses the id attribute of an HTML tag to find one specific element. We can give any name we want to our ID attribute, besides the obvious reserved words, such as tag names, etc.
+The ID selector uses the id attribute of an HTML tag to find one specific element. We can give any name we want to our ID attribute.
 
 - An ID is **unique** within a page.
 - You should use the id selector when you want to find a single, unique element.
