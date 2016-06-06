@@ -7,15 +7,16 @@ Market: SF
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
 # CSS Selectors Basics
-
+<!--
 **Hook:**
 
 http://www.sportsmanssupplyco.com/
 
 How would everyone fix this site?
+-->
 
 ## Why is this important?
-After this workshop, developers should be able to hand code a simple website from scratch with HTML and CSS. Arguably, you don't need to know this because nobody really starts from scratch anymore. However, this should solidify your conceptual model of how these things go together and improving your specific knowledge of some fundamental CSS properties so you can debug CSS more quickly.
+After this workshop, developers should be able to hand code a simple website from scratch with HTML and CSS. Generally, nobody really starts from scratch anymore. However, this should solidify your conceptual model of how these things go together and improve your specific knowledge of some fundamental CSS properties so you can debug CSS more quickly.
 
 ### Objectives
 *After this lesson, students will be able to:*
