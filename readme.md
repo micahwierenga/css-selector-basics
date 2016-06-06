@@ -54,7 +54,7 @@ It provides the browser with precise instructions on how to style each element w
 Fist-to-five (before): How comfortable would you be implementing styles in your webpage?
 -->
 
-## Let's write some CSS - Catch Up (25 min)
+## Let's write some CSS - Catch Up (20 min)
 
 <!--**Reiterate half-mast concept**-->
 
