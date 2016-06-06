@@ -407,8 +407,10 @@ div {
 
 Sweet!
 
+<!--
 **CFU:**
 Fist-to-five (after): How comfortable would you be implementing styles in your webpage?
+-->
 
 ## Style using Classes and IDs - Independent Practice (10 min)
 
@@ -571,7 +573,7 @@ We can even use classes/IDs with elements to select and style HTML. Lets add a s
 </html>
 ```
 
-Imagine, we wanted to particular style to apply to all of the elements from the list but wanted other particular styles to apply to each item, individually. Definitely doable. Take a look at our CSS:
+Imagine, we wanted a particular style to apply to all of the elements from the list but wanted other particular styles to apply to each item, individually. Definitely doable. Take a look at our CSS:
 
 ```css
 body {
@@ -623,11 +625,11 @@ Now, all our list items are centered but the top item has a different font than 
 
 ## Specificity in CSS - Intro (5 min)
 
-One of the most important concepts with CSS is specificity. Imagine you select an element by it's class and give it some style; then, on the next line, you select the same element by it's element name and it's ID - how does the browser know what style to apply?  Well, every element gets a score and it's this score that dictates what CSS property is applied.
+One of the most important concepts with CSS is specificity. Imagine you select an element by its class and give it some style; then, on the next line, you select the same element by its element name and its ID - how does the browser know what style to apply?  Well, every element gets a score and it's this score that dictates what CSS property is applied.
 
 [Specificity Calculator](http://specificity.keegan.st/)
 
-Every selector has its place in the specificity hierarchy, and if two selectors apply to the same element, the one with higher specificity wins.  Overall, there are four distinct factors that define the specificity level of a given selector: inline styles, IDs, classes+attributes and elements.  You can calculate CSS specificity with CSS Specificity Calculator:
+Every selector has its place in the specificity hierarchy, and if two selectors apply to the same element, the one with higher specificity wins.  Overall, there are four distinct factors that define the specificity level of a given selector: inline styles, IDs, classes+attributes and elements.  You can calculate CSS specificity with the CSS Specificity Calculator:
 
 <img src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png" style="width: 400px;" />
 
@@ -654,13 +656,6 @@ A couple of rules to think about:
 - Inline styles > Internal styles > External styles
 - !important trumps all of the above.
 
-
-### Emmet (Optional)
-
-Emmet is a cool (optional) tool that dramatically reduces the number of keystrokes you make.
-* Demo
-* [Emmet Cheatsheet](http://docs.emmet.io/cheat-sheet/)
-
 ## Independent Practice - Using CSS to select class and id attributes (20 minutes)
 
 Go back to your code from the previous independent practice problem and continue to work through these exercises:
@@ -669,7 +664,7 @@ Go back to your code from the previous independent practice problem and continue
 - make the birds italic
 - make the fish underlined
 
-- create a new unordered ordered list add a list item for each the following plants:
+- create a new unordered list add a list item for each the following plants:
 
     - Dogwood Tree
     - Oak Tree
@@ -689,3 +684,9 @@ CSS can be really fun or a total nightmare. You have to remember a few rules, bu
 - Describe the differences between classes and IDs.
 - Identify the popular CSS properties we used today.
 - What are the use cases for inline styling vs. internal/external style sheets?
+
+### Emmet (Optional)
+
+Emmet is a cool (optional) tool that dramatically reduces the number of keystrokes you make.
+* Demo
+* [Emmet Cheatsheet](http://docs.emmet.io/cheat-sheet/)
