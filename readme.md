@@ -21,21 +21,21 @@ After this workshop, developers should be able to hand code a simple website fro
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Describe the syntactical and functional relationship between selectors, properties, and values
-- Style all elements of a particular HTML element on a web page
-- Describe the difference between class and id selectors
-- Apply styles to specific elements by selecting elements with classes and ids
-- Apply a set of styles to children of a specific class or tag
-- Change the style of a specific element using an inline style
+- **Describe** the syntactical and functional relationship between selectors, properties, and values
+- **Style** all elements of a particular HTML element on a web page
+- **Describe** the difference between class and id selectors
+- **Apply** styles to specific elements by selecting elements with classes and ids
+- **Apply** a set of styles to children of a specific class or tag
+- **Change** the style of a specific element using an inline style
 
 
 ### Preparation
 
 *Before this lesson, students should already be able to:*
 
-- Write basic HTML
-- Use a text editor
-- Open the chrome console and inspect elements.
+- **Write** basic HTML
+- **Use** a text editor
+- **Open** the chrome console and inspect elements.
 
 
 ## What is CSS? Intro
@@ -49,13 +49,14 @@ CSS stands for:
 - **S**heet
 
 It provides the browser with precise instructions on how to style each element we want displayed on the page and can affect the text format - like font, size, color - the size and position of various objects on the page, colors, spacial layouts, etc. There are literally hundreds of different properties we can use to style HTML elements on a webpage.
-
+<!--
 **CFU:**
 Fist-to-five (before): How comfortable would you be implementing styles in your webpage?
+-->
 
 ## Let's write some CSS - Catch Up (25 min)
 
-**Reiterate half-mast concept**
+<!--**Reiterate half-mast concept**-->
 
 Create a new folder with a HTML page:
 
@@ -80,6 +81,8 @@ First, add a basic HTML structure to your `index.html` file:
  </body>
  </html>
 ```
+
+<!-- Half-mast break -->
 
 ####Adding CSS
 
@@ -113,6 +116,8 @@ To use inline styles, add the style attribute to the relevant tag. The style att
 Open this HTML file in browser and let's see what we have - a red page!
 
 Inline CSS has a lot of downsides, though, so try to avoid using it on your projects and during class.
+
+<!--Half-mast break -->
 
 #### Style Sheets
 
@@ -155,6 +160,7 @@ If a _single page_ has a unique style, you could use an internal style sheet - t
 
 Just like before, if you open the index.html with your browser, you'll notice the body background has changed. We've selected the body element and instructed the browser to color it black.
 
+<!-- Half-mast break -->
 
 #### External Style Sheets
 
@@ -237,6 +243,8 @@ div {
 }
 
 ```
+
+<!-- Half-mast break -->
 
 Our body rule is still applied, and these new rules will change the color of all paragraph tags to have the font-color "orange" and add a 1px black border to each DIV on the page, since the selector targets the "div" elements.  Refresh your browser and check it out.
 
