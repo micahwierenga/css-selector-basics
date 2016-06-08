@@ -1,6 +1,6 @@
 <!--
 Creator: Baseline curriculum
-Editor: Ben Hulan
+Editor: Ben Hulan and ZebGirouard
 Market: SF
 -->
 
@@ -13,6 +13,8 @@ Market: SF
 http://www.sportsmanssupplyco.com/
 
 How would everyone fix this site?
+
+Most of these things are changeable with CSS Selectors
 -->
 
 ## Why is this important?
