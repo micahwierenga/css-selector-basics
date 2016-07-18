@@ -692,3 +692,7 @@ CSS can be really fun or a total nightmare. You have to remember a few rules, bu
 Emmet is a cool (optional) tool that dramatically reduces the number of keystrokes you make.
 * Demo
 * [Emmet Cheatsheet](http://docs.emmet.io/cheat-sheet/)
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
