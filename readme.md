@@ -37,8 +37,6 @@ After this workshop, developers should be able to hand code a simple website fro
 
 - **Write** basic HTML
 - **Use** a text editor
-- **Open** the chrome console and inspect elements.
-
 
 ## What is CSS? Intro
 
@@ -134,9 +132,6 @@ selector {
 ```
 
 Do not forget the curly brackets or the semi-colon after the value!
-
-The last semi-colon can be omitted but it's optional.
-
 
 #### Internal Style Sheets
 
@@ -658,7 +653,17 @@ A couple of rules to think about:
 - Inline styles > Internal styles > External styles
 - !important trumps all of the above.
 
-## Independent Practice - Using CSS to select class and id attributes (20 minutes)
+## Conclusion
+
+CSS can be really fun or a total nightmare. You have to remember a few rules, but once you have them remembered, it's great to see your webpage come to life as you imagined.
+
+- Describe the differences between classes and IDs.
+- Identify the popular CSS properties we used today.
+- What are the use cases for inline styling vs. internal/external style sheets?
+
+## Additional Practice Exercises
+
+### Using CSS to select class and id attributes
 
 Go back to your code from the previous independent practice problem and continue to work through these exercises:
 
@@ -677,15 +682,6 @@ Go back to your code from the previous independent practice problem and continue
 
 - give all ul's a border with a width of 3 pixels, a color of plum, and a style of dotted. Also, give them a border radius of 5px.
 - give all li's a top border of 3 pixels, a color of seagreen, and a style of solid.
-
-
-## Conclusion
-
-CSS can be really fun or a total nightmare. You have to remember a few rules, but once you have them remembered, it's great to see your webpage come to life as you imagined.
-
-- Describe the differences between classes and IDs.
-- Identify the popular CSS properties we used today.
-- What are the use cases for inline styling vs. internal/external style sheets?
 
 ### Emmet (Optional)
 
