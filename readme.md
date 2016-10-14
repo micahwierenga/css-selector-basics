@@ -8,6 +8,8 @@ Market: DEN
 
 <!--9:00 5 minutes -->
 
+<!--Schedule is tight this day.  Speed up when possible, but make sure students are following. -->
+
 # CSS Selectors Basics
 <!--
 **Hook:**
@@ -56,7 +58,7 @@ It provides the browser with precise instructions on how to style each element w
 Fist-to-five (before): How comfortable would you be implementing styles in your webpage?
 -->
 
-<!--9:05 25 minutes -->
+<!--9:05 15 minutes -->
 
 ## Let's write some CSS - Catch Up
 
@@ -261,7 +263,7 @@ Luckily for us, CSS gives us some nice shortcuts that we'll go over throughout t
 
 Notice, we can comment out CSS with `/* your css */`.
 
-<!-- 9:30 10 minutes -->
+<!-- 9:20 10 minutes -->
 
 <!--Get two-column table on board: one with "class" heading, one with "ID" heading -->
 
@@ -416,7 +418,7 @@ Sweet!
 Fist-to-five (after): How comfortable would you be implementing styles in your webpage?
 -->
 
-<!--9:40 10 minutes -->
+<!--9:30 10 minutes -->
 
 ## Style using Classes and IDs - Independent Practice
 
@@ -447,7 +449,7 @@ Create a new work folder with an `index.html` and `styles.css` file inside. Usin
     - bird - lightGray
     - fish - lightYellow
 
-<!--9:50 15 minutes -->
+<!--9:40 10 minutes -->
 
 #### Multiple classes and multiple elements - Catch Up
 
@@ -622,7 +624,7 @@ li#not {
 
 Now, all our list items are centered but the top item has a different font than the bottom.
 
-<!--10:05 5 minutes -->
+<!--9:50 5 minutes -->
 
 ## Specificity in CSS - Intro
 
