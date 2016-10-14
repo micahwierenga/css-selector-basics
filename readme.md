@@ -6,6 +6,8 @@ Market: DEN
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--9:00 5 minutes -->
+
 # CSS Selectors Basics
 <!--
 **Hook:**
@@ -54,7 +56,9 @@ It provides the browser with precise instructions on how to style each element w
 Fist-to-five (before): How comfortable would you be implementing styles in your webpage?
 -->
 
-## Let's write some CSS - Catch Up (20 min)
+<!--9:05 25 minutes -->
+
+## Let's write some CSS - Catch Up
 
 <!--**Reiterate half-mast concept**-->
 
@@ -257,6 +261,9 @@ Luckily for us, CSS gives us some nice shortcuts that we'll go over throughout t
 
 Notice, we can comment out CSS with `/* your css */`.
 
+<!-- 9:30 10 minutes -->
+
+<!--Get two-column table on board: one with "class" heading, one with "ID" heading -->
 
 ## Differences between Classes and IDs - Demo
 
@@ -409,9 +416,11 @@ Sweet!
 Fist-to-five (after): How comfortable would you be implementing styles in your webpage?
 -->
 
-## Style using Classes and IDs - Independent Practice (10 min)
+<!--9:40 10 minutes -->
 
-Using what we've done in class, open the [starter code](starter-code) provided and see how far you can get through these exercises in 10 minutes:
+## Style using Classes and IDs - Independent Practice
+
+Create a new work folder with an `index.html` and `styles.css` file inside. Using what we've done in class, see how far you can get through these exercises:
 
 - make an unordered HTML list of the following animals:  
 
@@ -429,23 +438,18 @@ Using what we've done in class, open the [starter code](starter-code) provided a
 - make all the mammals red, all the birds blue, and all the fish orange using CSS classes
 - apply the following colors to the list using IDs:
 
-    - mouse - <span style = "color: gray">gray</span>
-    - canary - <span style = "color: orangeRed">orangeRed</span>
-    - penguin - <span style = "color: black">black</span>
-    - salmon - <span style = "color: salmon">salmon</span>  
-    - cat - <span style = "color: sienna">sienna</span>
-    - goldfish - <span style = "color: gold">gold</span>  
-    - dog - <span style = "color: tan">tan</span>  
-    - sheep - <span style = "color: steelBlue">steelBlue</span>
-    - parakeet - <span style = "color: lime">lime</span>  
-    - tuna - <span style = "color: purple">purple</span>
+    - mouse - <span style = "color: gray;">gray</span>
+    - penguin - <span style = "color: black;">black</span>
+    - goldfish - <span style = "color: gold;">gold</span>  
 
 - add the following background colors to your existing classes:
     - mammal - lavenderBlush
     - bird - lightGray
     - fish - lightYellow
 
-#### Multiple classes and multiple elements - Catch Up (15 min)
+<!--9:50 15 minutes -->
+
+#### Multiple classes and multiple elements - Catch Up
 
 You can also chain classes together, applying several classes to one element:
 
@@ -618,9 +622,9 @@ li#not {
 
 Now, all our list items are centered but the top item has a different font than the bottom.
 
+<!--10:05 5 minutes -->
 
-
-## Specificity in CSS - Intro (5 min)
+## Specificity in CSS - Intro
 
 One of the most important concepts with CSS is specificity. Imagine you select an element by its class and give it some style; then, on the next line, you select the same element by its element name and its ID - how does the browser know what style to apply?  Well, every element gets a score and it's this score that dictates what CSS property is applied.
 
