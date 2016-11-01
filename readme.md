@@ -90,10 +90,11 @@ First, add a basic HTML structure to your `index.html` file:
 
 <!-- Half-mast break (catch up) -->
 
-####Adding CSS
+#### Adding CSS
 
 There are three different ways to use CSS to style your HTML:
 
+<!--Whip-around -->
 - External style sheet
 - Internal Style sheet
 - Inline style
@@ -246,6 +247,8 @@ div {
 }
 
 ```
+
+<!--Already 9:28 (9:03 start) here -->
 
 <!-- Half-mast break - put this up on projector, split HTML/CSS screens, NO COPY-PASTE-->
 
@@ -699,8 +702,8 @@ Go back to your code from the previous independent practice problem and continue
     - Venus Fly Trap
     - Ent
 
-- give all ul's a border with a width of 3 pixels, a color of plum, and a style of dotted. Also, give them a border radius of 5px.
-- give all li's a top border of 3 pixels, a color of seagreen, and a style of solid.
+- give all `ul`s a border with a width of 3 pixels, a color of plum, and a style of dotted. Also, give them a border radius of 5px.
+- give all `li`s a top border of 3 pixels, a color of seagreen, and a style of solid.
 
 ### Emmet (Optional)
 
