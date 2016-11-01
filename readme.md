@@ -88,7 +88,7 @@ First, add a basic HTML structure to your `index.html` file:
  </html>
 ```
 
-<!-- Half-mast break -->
+<!-- Half-mast break (catch up) -->
 
 ####Adding CSS
 
@@ -123,7 +123,7 @@ Open this HTML file in browser and let's see what we have - a red page!
 
 Inline CSS has a lot of downsides, though, so try to avoid using it on your projects and during class.
 
-<!--Half-mast break -->
+<!-- Have students make the page blue -->
 
 #### Style Sheets
 
@@ -163,7 +163,7 @@ If a _single page_ has a unique style, you could use an internal style sheet - t
 
 Just like before, if you open the index.html with your browser, you'll notice the body background has changed. We've selected the body element and instructed the browser to color it black.
 
-<!-- Half-mast break -->
+<!-- Half-mast break make background green with internal style sheet-->
 
 #### External Style Sheets
 
@@ -247,7 +247,7 @@ div {
 
 ```
 
-<!-- Half-mast break -->
+<!-- Half-mast break - put this up on projector, split HTML/CSS screens, NO COPY-PASTE-->
 
 Our body rule is still applied, and these new rules will change the color of all paragraph tags to have the font-color "orange" and add a 1px black border to each DIV on the page, since the selector targets the "div" elements.  Refresh your browser and check it out.
 
@@ -263,15 +263,20 @@ Luckily for us, CSS gives us some nice shortcuts that we'll go over throughout t
 
 Notice, we can comment out CSS with `/* your css */`.
 
+<!--Devs try that out -->
+
 <!-- 9:20 10 minutes -->
 
 <!--Get two-column table on board: one with "class" heading, one with "ID" heading -->
+<!--Half-mast for this whole demo -->
 
 ## Differences between Classes and IDs - Demo
 
 #### The Class Selector
 
 The class selector finds elements with a specific class, and as an attribute, class allows us to target several elements that may share similarities. Note that:
+
+<!--Whip-around for this while instructor writes on board -->
 
 - Classes are **NOT** unique
 - You can use the same class on multiple elements
@@ -340,6 +345,8 @@ If I refresh my browser, I see the updates.  The browser selects all elements on
 ####The ID Selector
 
 The ID selector uses the id attribute of an HTML tag to find one specific element. We can give any name we want to our ID attribute.
+
+<!--Whip-around while writing -->
 
 - An ID is **unique** within a page.
 - You should use the id selector when you want to find a single, unique element.
@@ -450,6 +457,8 @@ Create a new work folder with an `index.html` and `styles.css` file inside. Usin
     - fish - lightYellow
 
 <!--9:40 10 minutes -->
+
+<!--Half-mast, shorten catch-up to last piece if no time-->
 
 #### Multiple classes and multiple elements - Catch Up
 
@@ -659,9 +668,13 @@ A couple of rules to think about:
 - Inline styles > Internal styles > External styles
 - !important trumps all of the above.
 
+<!--9:55 5 minutes -->
+
 ## Conclusion
 
 CSS can be really fun or a total nightmare. You have to remember a few rules, but once you have them remembered, it's great to see your webpage come to life as you imagined.
+
+<!--Think-pair-share -->
 
 - Describe the differences between classes and IDs.
 - Identify the popular CSS properties we used today.
@@ -692,7 +705,6 @@ Go back to your code from the previous independent practice problem and continue
 ### Emmet (Optional)
 
 Emmet is a cool (optional) tool that dramatically reduces the number of keystrokes you make.
-* Demo
 * [Emmet Cheatsheet](http://docs.emmet.io/cheat-sheet/)
 
 ## Licensing
