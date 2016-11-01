@@ -461,7 +461,7 @@ Create a new work folder with an `index.html` and `styles.css` file inside. Usin
 
 <!--9:40 10 minutes -->
 
-<!--Half-mast, shorten catch-up to last piece if no time-->
+<!--Half-mast, cut catch-up if no time-->
 
 #### Multiple classes and multiple elements - Catch Up
 
