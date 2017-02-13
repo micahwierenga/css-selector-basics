@@ -8,7 +8,7 @@ Market: DEN
 
 <!--9:00 5 minutes -->
 
-<!--Schedule is tight this day.  Speed up when possible, but make sure students are following. -->
+<!--Schedule is tight this day. Stick close to times. -->
 
 # CSS Selectors Basics
 <!--
@@ -58,7 +58,7 @@ It provides the browser with precise instructions on how to style each element w
 Fist-to-five (before): How comfortable would you be implementing styles in your webpage?
 -->
 
-<!--9:05 15 minutes -->
+<!--9:05 20 minutes -->
 
 ## Let's write some CSS - Catch Up
 
@@ -94,12 +94,13 @@ First, add a basic HTML structure to your `index.html` file:
 
 There are three different ways to use CSS to style your HTML:
 
-<!--Whip-around -->
 - External style sheet
 - Internal Style sheet
 - Inline style
 
 Let's take a look at each one.
+
+<!--Demo Inline CSS and Internal Stylesheet with devs at half-mast -->
 
 #### Inline CSS
 
@@ -119,12 +120,9 @@ To use inline styles, add the style attribute to the relevant tag. The style att
  </html>
 ```
 
-
 Open this HTML file in browser and let's see what we have - a red page!
 
 Inline CSS has a lot of downsides, though, so try to avoid using it on your projects and during class.
-
-<!-- Have students make the page blue -->
 
 #### Style Sheets
 
@@ -162,9 +160,7 @@ If a _single page_ has a unique style, you could use an internal style sheet - t
 
 ```
 
-Just like before, if you open the index.html with your browser, you'll notice the body background has changed. We've selected the body element and instructed the browser to color it black.
-
-<!-- Half-mast break make background green with internal style sheet-->
+Just like before, if you open the `index.html` with your browser, you'll notice the body background has changed. We've selected the body element and instructed the browser to color it black.
 
 #### External Style Sheets
 
@@ -194,16 +190,9 @@ Then we can move the CSS from our internal style sheet to our external style she
 
 ```
 
-
 We often have a specific folder for stylesheets, as we can have several in one application, and we're doing that now with our `/css` folder.
 
-#### We need to create a css file
-
-```bash
-touch style.css
-```
-
-And let's add some more html to our index.html:
+Now let's add some more html to our index.html:
 
 
 ```html
@@ -224,7 +213,6 @@ And let's add some more html to our index.html:
 
  </html>
 ```
-
 
 Now, let's add the CSS we had - plus some more - to our stylesheet file:
 
@@ -268,7 +256,7 @@ Notice, we can comment out CSS with `/* your css */`.
 
 <!--Devs try that out -->
 
-<!-- 9:20 10 minutes -->
+<!-- 9:25 10 minutes -->
 
 <!--Get two-column table on board: one with "class" heading, one with "ID" heading -->
 <!--Half-mast for this whole demo -->
@@ -318,7 +306,6 @@ Watch me add some HTML to our index.html and then style those elements by select
 
 </html>
 
-
 ```
 
 Now, for the style:
@@ -345,7 +332,7 @@ div {
 
 If I refresh my browser, I see the updates.  The browser selects all elements on the page with the `comments` class and alters the font-weight and color.
 
-####The ID Selector
+#### The ID Selector
 
 The ID selector uses the id attribute of an HTML tag to find one specific element. We can give any name we want to our ID attribute.
 
@@ -428,7 +415,7 @@ Sweet!
 Fist-to-five (after): How comfortable would you be implementing styles in your webpage?
 -->
 
-<!--9:30 10 minutes -->
+<!--9:35 10 minutes -->
 
 ## Style using Classes and IDs - Independent Practice
 
@@ -459,9 +446,9 @@ Create a new work folder with an `index.html` and `styles.css` file inside. Usin
     - bird - lightGray
     - fish - lightYellow
 
-<!--9:40 10 minutes -->
+<!--9:45 10 minutes -->
 
-<!--Half-mast, cut catch-up if no time-->
+<!--Just Demo-->
 
 #### Multiple classes and multiple elements - Catch Up
 
@@ -636,7 +623,7 @@ li#not {
 
 Now, all our list items are centered but the top item has a different font than the bottom.
 
-<!--9:50 5 minutes -->
+<!--9:55 5 minutes -->
 
 ## Specificity in CSS - Intro
 
@@ -648,7 +635,7 @@ Every selector has its place in the specificity hierarchy, and if two selectors 
 
 <img src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png" style="width: 400px;" />
 
-###Calculating specificity
+### Calculating specificity
 
 <img src='https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png' style="width: 400px;" />
 
@@ -671,7 +658,7 @@ A couple of rules to think about:
 - Inline styles > Internal styles > External styles
 - !important trumps all of the above.
 
-<!--9:55 5 minutes -->
+<!--10:00 5 minutes -->
 
 ## Conclusion
 
@@ -704,11 +691,6 @@ Go back to your code from the previous independent practice problem and continue
 
 - give all `ul`s a border with a width of 3 pixels, a color of plum, and a style of dotted. Also, give them a border radius of 5px.
 - give all `li`s a top border of 3 pixels, a color of seagreen, and a style of solid.
-
-### Emmet (Optional)
-
-Emmet is a cool (optional) tool that dramatically reduces the number of keystrokes you make.
-* [Emmet Cheatsheet](http://docs.emmet.io/cheat-sheet/)
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
