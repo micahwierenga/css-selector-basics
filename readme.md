@@ -104,7 +104,7 @@ Let's take a look at each one.
 
 #### Inline CSS
 
-If you're looking to add a unique style for a single HTML element, you can use an inline style.  It can also be used to test different styles, initially, or for quick fixes, as it's much easier to change a single element on the page than to find and change the source CSS file.  
+Style rules can be added directly to an element with a `style` attribute. However, we're going to reserve this method for JavaScript DOM manipulation. Using it for anything else is frowned upon, as it leaves your code sloppy, repeatative, and hard to update.
 
 To use inline styles, add the style attribute to the relevant tag. The style attribute can contain any CSS property. The example shows us changing the HTML body's background to red:
 
@@ -119,10 +119,6 @@ To use inline styles, add the style attribute to the relevant tag. The style att
    </body>
  </html>
 ```
-
-Open this HTML file in browser and let's see what we have - a red page!
-
-Inline CSS has a lot of downsides, though, so try to avoid using it on your projects and during class.
 
 #### Style Sheets
 
@@ -161,10 +157,11 @@ If a _single page_ has a unique style, you could use an internal style sheet - t
 ```
 
 Just like before, if you open the `index.html` with your browser, you'll notice the body background has changed. We've selected the body element and instructed the browser to color it black.
+While very easy to implement, this method is also frowned upon unless you have a very specific reason for doing so.
 
 #### External Style Sheets
 
-With just one file - your external style sheet - you can modify the styles of your entire website.  That's really powerful and helps keep your code organized and separate.
+This is the preferred method for writing CSS. With just one file - your external style sheet - you can modify the styles of your entire website. It's extremely powerful, and helps keep your code organized and separate.
 
 To link the stylesheet to the HTML file, inside the `<head>` tags, we need to add a self-closing `<link>` tag, indicating the type of relations (`rel="stylesheet"`) and the file path.  But first, let's create a css file within our css directory.
 
