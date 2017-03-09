@@ -659,6 +659,8 @@ A couple of rules to think about:
 
 ## Conclusion
 
+![](images/css.gif)
+
 CSS can be really fun or a total nightmare. You have to remember a few rules, but once you have them remembered, it's great to see your webpage come to life as you imagined.
 
 <!--Think-pair-share -->
