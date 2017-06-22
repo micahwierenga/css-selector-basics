@@ -106,7 +106,7 @@ Let's take a look at each one.
 
 Style rules can be added directly to an element with a `style` attribute. However, we're going to reserve this method for JavaScript DOM manipulation. Using it for anything else is frowned upon, as it leaves your code sloppy, repeatative, and hard to update.
 
-To use inline styles, add the style attribute to the relevant tag. The style attribute can contain any CSS property. The example shows us changing the HTML body's background to red:
+To use inline styles, add the style attribute to the relevant tag. The style attribute can contain any CSS property. The example shows us changing the HTML body's background to azure:
 
 ```html
 
@@ -115,7 +115,7 @@ To use inline styles, add the style attribute to the relevant tag. The style att
    <head>
      <title>Intro to CSS</title>
    </head>
-   <body style="background:red">
+   <body style="background:azure;">
    </body>
  </html>
 ```
@@ -177,12 +177,14 @@ Then we can move the CSS from our internal style sheet to our external style she
 ```html
  <!DOCTYPE>
  <html>
+
    <head>
      <title>Intro to CSS</title>
    <link rel="stylesheet" href="css/style.css">
    </head>
- <body>
- </body>
+
+   <body>
+   </body>
  </html>
 
 ```
@@ -196,6 +198,7 @@ Now let's add some more html to our index.html:
 
  <!DOCTYPE>
  <html>
+
    <head>
      <title>Intro to CSS</title>
    <link rel="stylesheet" href="css/style.css">
@@ -203,7 +206,6 @@ Now let's add some more html to our index.html:
 
    <body>
      <p>This is a paragraph element</p>
-
      <div>This is a DIV</div>
      <div>This is another DIV</div>
    </body>
@@ -216,7 +218,7 @@ Now, let's add the CSS we had - plus some more - to our stylesheet file:
 ```css
 
 body {
-  background: red
+  background: azure;
 }
 
 p {
@@ -224,11 +226,9 @@ p {
 }
 
 div {
-
     border-width: 1px;
     border-style: solid;
     border-color: black;
-
 }
 
 ```
@@ -310,11 +310,11 @@ Now, for the style:
 ```css
 
 body {
-  background: red;
+  background: azure;
 }
 
 p {
-  color: orange;
+  color: indigo;
 }
 
 div {
@@ -368,9 +368,9 @@ How about we try it out?  Altering the HTML:
         Hello
     </div>
 
-    <section id="dolphin">
+    <div class="comments" id="dolphin">
         I am a dolphin
-    </section>
+    </div>
 
   </body>
 
@@ -383,11 +383,11 @@ And now the style:
 ```css
 
 body {
-  background: red;
+  background: azure;
 }
 
 p {
-  color: orange;
+  color: indigo;
 }
 
 div {
@@ -396,12 +396,12 @@ div {
 
 .comments {
     font-weight: bold;
-    color: #64FE2E; /* green */
+    color: #64FE2E;
 }
 
 #dolphin {
     font-style: italic;
-    color: #0040FF; /*blue*/
+    color: #0040FF;
 }
 ```
 
@@ -431,17 +431,17 @@ Create a new work folder with an `index.html` and `styles.css` file inside. Usin
     - parakeet  
     - tuna  
 
-- make all the mammals red, all the birds blue, and all the fish orange using CSS classes
+- make all the mammals pink, all the birds blue, and all the fish orange using CSS classes
 - apply the following colors to the list using IDs:
 
-    - mouse - <span style = "color: gray;">gray</span>
-    - penguin - <span style = "color: black;">black</span>
-    - goldfish - <span style = "color: gold;">gold</span>  
+    - mouse = gray
+    - penguin = black
+    - goldfish = gold  
 
 - add the following background colors to your existing classes:
-    - mammal - lavenderBlush
-    - bird - lightGray
-    - fish - lightYellow
+    - mammal = lavenderBlush
+    - bird = lightGray
+    - fish = lightYellow
 
 <!--9:45 10 minutes -->
 
@@ -480,11 +480,13 @@ Let's add:
         Hello
     </div>
 
-    <section id="dolphin">
+    <div class="comments" id="dolphin">
         I am a dolphin
-    </section>
+    </div>
 
-     <p class="first second">Multiple classes</p>
+    <div class="comments first second">
+        Multiple classes
+    </div>
 
   </body>
 
@@ -496,11 +498,11 @@ Then, create two classes:
 
 ```css
 body {
-  background: red;
+  background: azure;
 }
 
 p {
-  color: orange;
+  color: indigo;
 }
 
 div {
@@ -509,12 +511,12 @@ div {
 
 .comments {
     font-weight: bold;
-    color: #64FE2E; /* green */
+    color: #20B2AA;
 }
 
 #dolphin {
     font-style: italic;
-    color: #0040FF; /*blue*/
+    color: #FF69B4;
 }
 
 .first {
@@ -522,7 +524,7 @@ div {
 }
 
 .second {
-  color: red;
+  color: MidnightBlue;
 }
 ```
 
@@ -556,15 +558,17 @@ We can even use classes/IDs with elements to select and style HTML. Lets add a s
         Hello
     </div>
 
-    <section id="dolphin">
+    <div class="comments" id="dolphin">
         I am a dolphin
-    </section>
+    </div>
 
-     <p class="first second">Multiple classes</p>
+     <div class="comments first second">
+        Multiple classes
+    </div>
 
      <ul>
-      <li class="why" >Why a dolphin?</li>
-      <li class="why" id="not">Why not?</li>
+        <li class="why" >Why a dolphin?</li>
+        <li class="why" id="not">Why not?</li>
      </ul>
 
   </body>
@@ -576,11 +580,11 @@ Imagine, we wanted a particular style to apply to all of the elements from the l
 
 ```css
 body {
-  background: red;
+  background: azure;
 }
 
 p {
-  color: orange;
+  color: indigo;
 }
 
 div {
@@ -589,12 +593,12 @@ div {
 
 .comments {
     font-weight: bold;
-    color: #64FE2E; /* green */
+    color: #20B2AA;
 }
 
 #dolphin {
     font-style: italic;
-    color: #0040FF; /*blue*/
+    color: #FF69B4;
 }
 
 .first {
@@ -602,23 +606,27 @@ div {
 }
 
 .second {
-  color: red;
+  color: MidnightBlue;
 }
 
 li {
-  text-align: center
+  text-align: center;
+  font-style: italic;
+  color: Tomato;
 }
 
 li.why {
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 li#not {
   font-family: serif;
+  font-size: 36px;
 }
 ```
 
-Now, all our list items are centered but the top item has a different font than the bottom.
+Now, all our list items are centered but the top item has a different font than the bottom. What styles were inherited? What was overwritten?
 
 <!--9:55 5 minutes -->
 
