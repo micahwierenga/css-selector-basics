@@ -24,7 +24,7 @@ Most of these things are changeable with CSS Selectors
 ## Why is this important?
 After this workshop, developers should be able to hand code a simple website from scratch with HTML and CSS. Generally, nobody really starts from scratch anymore. However, this should solidify your conceptual model of how these things go together and improve your specific knowledge of some fundamental CSS properties so you can debug CSS more quickly.
 
-### Objectives
+## Objectives
 *After this lesson, students will be able to:*
 
 - **Describe** the syntactical and functional relationship between selectors, properties, and values
@@ -35,16 +35,16 @@ After this workshop, developers should be able to hand code a simple website fro
 - **Change** the style of a specific element using an inline style
 
 
-### Preparation
+## Preparation
 
 *Before this lesson, students should already be able to:*
 
 - **Write** basic HTML
 - **Use** a text editor
 
-## What is CSS? Intro
+## What is CSS?
 
-If HTML is a set of instructions telling the browser what to display, CSS tells it how to display it.
+If HTML is a set of instructions telling the browser what to display, CSS tells it how to display it. It's the **Adjectives** to our HTML **nouns**.
 
 CSS stands for:
 
@@ -60,7 +60,7 @@ Fist-to-five (before): How comfortable would you be implementing styles in your 
 
 <!--9:05 20 minutes -->
 
-## Let's write some CSS - Catch Up
+## Let's write some CSS!
 
 <!--**Reiterate half-mast concept**-->
 
@@ -90,19 +90,20 @@ First, add a basic HTML structure to your `index.html` file:
 
 <!-- Half-mast break (catch up) -->
 
-#### Adding CSS
+## Adding CSS
 
 There are three different ways to use CSS to style your HTML:
 
-- External style sheet
-- Internal Style sheet
 - Inline style
+- Style Sheet: Internal
+- Style Sheet: External
 
-Let's take a look at each one.
+
+Let's take a look at each one:
 
 <!--Demo Inline CSS and Internal Stylesheet with devs at half-mast -->
 
-#### Inline CSS
+### Inline Style
 
 Style rules can be added directly to an element with a `style` attribute. However, we're going to reserve this method for JavaScript DOM manipulation. Using it for anything else is frowned upon, as it leaves your code sloppy, repeatative, and hard to update.
 
@@ -120,7 +121,7 @@ To use inline styles, add the style attribute to the relevant tag. The style att
  </html>
 ```
 
-#### Style Sheets
+### Style Sheets - Internal and External
 
 Style sheets can be written in your HTML (internal) or in a separate CSS file (external).  Whatever style sheet you use, the CSS syntax is the same. We build our CSS with a selector - usually the name of the HTML tag, a specific class of elements, or an element with a unique ID:
 
@@ -163,7 +164,7 @@ While very easy to implement, this method is also frowned upon unless you have a
 
 This is the preferred method for writing CSS. With just one file - your external style sheet - you can modify the styles of your entire website. It's extremely powerful, and helps keep your code organized and separate.
 
-To link the stylesheet to the HTML file, inside the `<head>` tags, we need to add a self-closing `<link>` tag, indicating the type of relations (`rel="stylesheet"`) and the file path.  But first, let's create a css file within our css directory.
+First, we'll create a css file. We often have a specific folder for stylesheets, since we can have several in one application - so we'll put this in a `/css` folder:
 
 ```bash
 
@@ -172,7 +173,8 @@ touch css/style.css
 
 ```
 
-Then we can move the CSS from our internal style sheet to our external style sheet and add the file path (`href="css/style.css"`) to our HTML file:
+To link our stylesheet to our HTML, we have to call it into our`index.html` file. Inside the `<head>` tags, we need to add a self-closing `<link>` tag, indicating the type of relations (`rel="stylesheet"`) and the file path: 
+
 
 ```html
  <!DOCTYPE>
@@ -189,9 +191,11 @@ Then we can move the CSS from our internal style sheet to our external style she
 
 ```
 
-We often have a specific folder for stylesheets, as we can have several in one application, and we're doing that now with our `/css` folder.
+Now any CSS we write in our `style.css` file will show up on our `index.html` page!
 
-Now let's add some more html to our index.html:
+### Try it Out!
+
+Let's add some more html to our index.html:
 
 
 ```html
@@ -203,6 +207,7 @@ Now let's add some more html to our index.html:
      <title>Intro to CSS</title>
    <link rel="stylesheet" href="css/style.css">
    </head>
+
 
    <body>
      <p>This is a paragraph element</p>
@@ -258,11 +263,23 @@ Notice, we can comment out CSS with `/* your css */`.
 <!--Get two-column table on board: one with "class" heading, one with "ID" heading -->
 <!--Half-mast for this whole demo -->
 
-## Differences between Classes and IDs - Demo
+## Classes and IDs
+
+You can add a `class` or `id` to any HTML element to style it in your external CSS:
+
+```html
+
+    <div id="header">My Header</div>
+
+    <div class="paragraph">My Paragraph</div>
+
+```
+
+But there's a big difference between the two. It's important to know when to use them.
 
 #### The Class Selector
 
-The class selector finds elements with a specific class, and as an attribute, class allows us to target several elements that may share similarities. Note that:
+Classes are used to denote HTML elements **that share similarities**. For instance, there's different classes of cars - like SUVs, vans, and trucks. All trucks are not identical, but they share enough similarities that we can easily  classify them when we see them. In the same way, you'll use CSS classes to group objects that are visually similar, so that you update their appearance in only one place.
 
 <!--Whip-around for this while instructor writes on board -->
 
@@ -327,17 +344,17 @@ div {
 }
 ```
 
-If I refresh my browser, I see the updates.  The browser selects all elements on the page with the `comments` class and alters the font-weight and color.
+If I refresh my browser (`cmd + R`), I see the updates.  The browser selects all elements on the page with the `comments` class and alters the font-weight and color.
 
 #### The ID Selector
 
-The ID selector uses the id attribute of an HTML tag to find one specific element. We can give any name we want to our ID attribute.
+IDs are used to denote HTML elements that are **unique**. An ID can only be used once in an HTML page, and should be reserved for extremely specific content.
 
 <!--Whip-around while writing -->
 
 - An ID is **unique** within a page.
-- You should use the id selector when you want to find a single, unique element.
-- In the CSS document, you use a hashtag (#) to denote an ID
+- You should use an id selector when you want to find a single, unique element.
+- In the CSS document, you use a hashtag (#) to denote an ID.
 
 How about we try it out?  Altering the HTML:
 
@@ -416,7 +433,7 @@ Fist-to-five (after): How comfortable would you be implementing styles in your w
 
 ## Style using Classes and IDs - Independent Practice
 
-Create a new work folder with an `index.html` and `styles.css` file inside. Using what we've done in class, see how far you can get through these exercises:
+Create a new directory with an `index.html` and `styles.css` file inside. Using what we've done in class, see how far you can get through these exercises:
 
 - make an unordered HTML list of the following animals:  
 
@@ -447,7 +464,7 @@ Create a new work folder with an `index.html` and `styles.css` file inside. Usin
 
 <!--Just Demo-->
 
-#### Multiple classes and multiple elements - Catch Up
+## Multiple classes and multiple elements
 
 You can also chain classes together, applying several classes to one element:
 
@@ -669,7 +686,7 @@ A couple of rules to think about:
 
 ![](images/css.gif)
 
-CSS can be really fun or a total nightmare. You have to remember a few rules, but once you have them remembered, it's great to see your webpage come to life as you imagined.
+CSS can be really fun or a total nightmare. You have to remember a few rules, but once you have them memorized, it's great to see your webpage come to life as you imagined.
 
 <!--Think-pair-share -->
 
