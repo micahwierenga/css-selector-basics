@@ -7,6 +7,7 @@ Market: DEN
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
 <!--9:00 5 minutes -->
+<!--WDI6 9:08 -->
 
 <!--Schedule is tight this day. Stick close to times. -->
 
@@ -33,7 +34,6 @@ After this workshop, developers should be able to hand code a simple website fro
 - **Apply** styles to specific elements by selecting elements with classes and ids
 - **Apply** a set of styles to children of a specific class or tag
 - **Change** the style of a specific element using an inline style
-
 
 ## Preparation
 
@@ -88,6 +88,7 @@ First, add a basic HTML structure to your `index.html` file:
  </html>
 ```
 
+<!--WDI6 9:21 turning over to devs, coming back 9:25 -->
 <!-- Half-mast break (catch up) -->
 
 ## Adding CSS
@@ -193,6 +194,8 @@ To link our stylesheet to our HTML, we have to call it into our`index.html` file
 
 Now any CSS we write in our `style.css` file will show up on our `index.html` page!
 
+<!--WDI6 9:36 -->
+
 ### Try it Out!
 
 Let's add some more html to our index.html:
@@ -239,6 +242,7 @@ div {
 ```
 
 <!--Already 9:28 (9:03 start) here -->
+<!--WDI6 9:44  -->
 
 <!-- Half-mast break - put this up on projector, split HTML/CSS screens, NO COPY-PASTE-->
 
@@ -258,6 +262,7 @@ Notice, we can comment out CSS with `/* your css */`.
 
 <!--Devs try that out -->
 
+<!--WDI6 9:46 -->
 <!-- 9:25 10 minutes -->
 
 <!--Get two-column table on board: one with "class" heading, one with "ID" heading -->
@@ -429,11 +434,12 @@ Sweet!
 Fist-to-five (after): How comfortable would you be implementing styles in your webpage?
 -->
 
+<!--WDI6 9:59  -->
 <!--9:35 10 minutes -->
 
 ## Style using Classes and IDs - Independent Practice
 
-Create a new directory with an `index.html` and `styles.css` file inside. Using what we've done in class, see how far you can get through these exercises:
+Create a new directory with an `index.html` and `style.css` file inside. Using what we've done in class, see how far you can get through these exercises:
 
 - make an unordered HTML list of the following animals:  
 
@@ -715,6 +721,8 @@ Go back to your code from the previous independent practice problem and continue
 
 - give all `ul`s a border with a width of 3 pixels, a color of plum, and a style of dotted. Also, give them a border radius of 5px.
 - give all `li`s a top border of 3 pixels, a color of seagreen, and a style of solid.
+
+<!--WDI6 10:28 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
