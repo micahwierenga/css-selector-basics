@@ -352,9 +352,9 @@ If I refresh my browser (`cmd + R`), I see the updates. The browser selects all 
 
 #### The ID Selector
 
-IDs are used to denote HTML elements that are **unique**. An id can only be used once in an HTML page, and should be reserved for extremely specific content.
+Ids are used to denote HTML elements that are **unique**. An id can only be used once in an HTML page, and should be reserved for extremely specific content.
 
-In CSS, however, doesn't care about the differences between ids and classes. They can be used [interchangably](https://css-tricks.com/the-difference-between-id-and-class/). In fact, some recommend [not using id selectors in CSS at all](https://dev.to/claireparker/reasons-not-to-use-ids-in-css-4ni4), while others [insist that they are helpful](https://stackoverflow.com/questions/1878810/is-there-any-pros-and-cons-if-i-use-always-css-class-instead-css-id-for-everythi).
+CSS, however, doesn't care about the differences between ids and classes. They can be used [interchangably](https://css-tricks.com/the-difference-between-id-and-class/). In fact, some recommend [not using id selectors in CSS at all](https://dev.to/claireparker/reasons-not-to-use-ids-in-css-4ni4), while others [insist that they are helpful](https://stackoverflow.com/questions/1878810/is-there-any-pros-and-cons-if-i-use-always-css-class-instead-css-id-for-everythi).
 
 <!--Whip-around while writing -->
 
