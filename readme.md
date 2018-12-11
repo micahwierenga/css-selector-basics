@@ -4,8 +4,6 @@ Editor: Ben Hulan and ZebGirouard
 Market: DEN
 -->
 
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
-
 <!--9:00 5 minutes -->
 <!--WDI6 9:08 -->
 
@@ -64,7 +62,7 @@ Fist-to-five (before): How comfortable would you be implementing styles in your 
 
 <!--**Reiterate half-mast concept**-->
 
-Create a new folder with a HTML page:
+Create a new folder with an HTML page:
 
 ```bash
 
@@ -106,7 +104,7 @@ Let's take a look at each one:
 
 ### Inline Style
 
-Style rules can be added directly to an element with a `style` attribute. However, we're going to reserve this method for JavaScript DOM manipulation. Using it for anything else is frowned upon, as it leaves your code sloppy, repeatative, and hard to update.
+Style rules can be added directly to an element with a `style` attribute. However, we're going to reserve this method for JavaScript DOM manipulation. Using it for anything else is frowned upon, as it leaves your code sloppy, repetitive, and hard to update. The one possible use for inline styles is in [email templates](https://litmus.com/blog/do-email-marketers-and-designers-still-need-to-inline-css), though this may no longer be necessary any more.
 
 To use inline styles, add the style attribute to the relevant tag. The style attribute can contain any CSS property. The example shows us changing the HTML body's background to azure:
 
@@ -122,9 +120,9 @@ To use inline styles, add the style attribute to the relevant tag. The style att
  </html>
 ```
 
-### Style Sheets - Internal and External
+### Style Sheets: Internal and External
 
-Style sheets can be written in your HTML (internal) or in a separate CSS file (external).  Whatever style sheet you use, the CSS syntax is the same. We build our CSS with a selector - usually the name of the HTML tag, a specific class of elements, or an element with a unique ID:
+Style sheets can be written in your HTML (internal) or in a separate CSS file (external). Whatever style sheet you use, the CSS syntax is the same. We build our CSS with a selector - usually the name of the HTML tag, a specific class of elements, or an element with a unique ID:
 
 ```css
 selector {
@@ -138,7 +136,7 @@ Do not forget the curly brackets or the semi-colon after the value!
 
 #### Internal Style Sheets
 
-If a _single page_ has a unique style, you could use an internal style sheet - these are defined and written in your HTML using the `<style>` element, inside the head section of an HTML page:
+If a _single page_ has a unique style, you could use an internal style sheet. These are defined and written in your HTML using the `<style>` element, inside the head section of an HTML page:
 
 ```html
 
@@ -159,6 +157,7 @@ If a _single page_ has a unique style, you could use an internal style sheet - t
 ```
 
 Just like before, if you open the `index.html` with your browser, you'll notice the body background has changed. We've selected the body element and instructed the browser to color it black.
+
 While very easy to implement, this method is also frowned upon unless you have a very specific reason for doing so.
 
 #### External Style Sheets
@@ -174,7 +173,7 @@ touch css/style.css
 
 ```
 
-To link our stylesheet to our HTML, we have to call it into our`index.html` file. Inside the `<head>` tags, we need to add a self-closing `<link>` tag, indicating the type of relations (`rel="stylesheet"`) and the file path: 
+To link our stylesheet to our HTML, we have to call it into our `index.html` file. Inside the `<head>` tags, we need to add a self-closing `<link>` tag, indicating the type of relations (`rel="stylesheet"`) and the file path: 
 
 
 ```html
@@ -226,11 +225,11 @@ Now, let's add the CSS we had - plus some more - to our stylesheet file:
 ```css
 
 body {
-  background: azure;
+    background: azure;
 }
 
 p {
-  color: orange;
+    color: orange;
 }
 
 div {
@@ -246,7 +245,7 @@ div {
 
 <!-- Half-mast break - put this up on projector, split HTML/CSS screens, NO COPY-PASTE-->
 
-Our body rule is still applied, and these new rules will change the color of all paragraph tags to have the font-color "orange" and add a 1px black border to each DIV on the page, since the selector targets the "div" elements.  Refresh your browser and check it out.
+Our body rule is still applied, and these new rules will change the color of all paragraph tags to have the font-color "orange" and add a 1px black border to each DIV on the page, since the selector targets the "div" elements. Refresh your browser and check it out.
 
 Luckily for us, CSS gives us some nice shortcuts that we'll go over throughout this lesson, and we can combine the `div` border styles into this:
 
@@ -284,7 +283,7 @@ But there's a big difference between the two. It's important to know when to use
 
 #### The Class Selector
 
-Classes are used to denote HTML elements **that share similarities**. For instance, there's different classes of cars - like SUVs, vans, and trucks. All trucks are not identical, but they share enough similarities that we can easily  classify them when we see them. In the same way, you'll use CSS classes to group objects that are visually similar, so that you update their appearance in only one place.
+Classes are used to denote HTML elements **that share similarities**. For instance, there's different classes of cars - like SUVs, vans, and trucks. All trucks are not identical, but they share enough similarities that we can easily classify them when we see them. In the same way, you'll use CSS classes to group objects that are visually similar, so that you update their appearance in only one place.
 
 <!--Whip-around for this while instructor writes on board -->
 
@@ -293,7 +292,7 @@ Classes are used to denote HTML elements **that share similarities**. For instan
 - You can use multiple classes on the same element
 - You can select a class using `.class-name {}`
 
-Watch me add some HTML to our index.html and then style those elements by selecting the classes associated with them:
+Watch me add some HTML to our `index.html` and then style those elements by selecting the classes associated with them:
 
 ```html
 <!DOCTYPE>
@@ -332,15 +331,15 @@ Now, for the style:
 ```css
 
 body {
-  background: azure;
+    background: azure;
 }
 
 p {
-  color: indigo;
+    color: indigo;
 }
 
 div {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 .comments {
@@ -349,11 +348,13 @@ div {
 }
 ```
 
-If I refresh my browser (`cmd + R`), I see the updates.  The browser selects all elements on the page with the `comments` class and alters the font-weight and color.
+If I refresh my browser (`cmd + R`), I see the updates. The browser selects all elements on the page with the `comments` class and alters the font-weight and color.
 
 #### The ID Selector
 
-IDs are used to denote HTML elements that are **unique**. An ID can only be used once in an HTML page, and should be reserved for extremely specific content.
+IDs are used to denote HTML elements that are **unique**. An id can only be used once in an HTML page, and should be reserved for extremely specific content.
+
+In CSS, however, doesn't care about the differences between ids and classes. They can be used [interchangably](https://css-tricks.com/the-difference-between-id-and-class/). In fact, some recommend [not using id selectors in CSS at all] (https://dev.to/claireparker/reasons-not-to-use-ids-in-css-4ni4), while others [insist that they are helpful](https://stackoverflow.com/questions/1878810/is-there-any-pros-and-cons-if-i-use-always-css-class-instead-css-id-for-everythi).
 
 <!--Whip-around while writing -->
 
@@ -405,15 +406,15 @@ And now the style:
 ```css
 
 body {
-  background: azure;
+    background: azure;
 }
 
 p {
-  color: indigo;
+    color: indigo;
 }
 
 div {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 .comments {
@@ -437,7 +438,7 @@ Fist-to-five (after): How comfortable would you be implementing styles in your w
 <!--WDI6 9:59  -->
 <!--9:35 10 minutes -->
 
-## Style using Classes and IDs - Independent Practice
+## Style using Classes and IDs: Independent Practice
 
 Create a new directory with an `index.html` and `style.css` file inside. Using what we've done in class, see how far you can get through these exercises:
 
@@ -455,7 +456,7 @@ Create a new directory with an `index.html` and `style.css` file inside. Using w
     - tuna  
 
 - make all the mammals pink, all the birds blue, and all the fish orange using CSS classes
-- apply the following colors to the list using IDs:
+- apply the following colors to the list using ids:
 
     - mouse = gray
     - penguin = black
@@ -521,15 +522,15 @@ Then, create two classes:
 
 ```css
 body {
-  background: azure;
+    background: azure;
 }
 
 p {
-  color: indigo;
+    color: indigo;
 }
 
 div {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 .comments {
@@ -543,17 +544,17 @@ div {
 }
 
 .first {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .second {
-  color: MidnightBlue;
+    color: MidnightBlue;
 }
 ```
 
 As we can imagine, the possibilities are endless. There are many properties and values to work with and many ways to target specific elements. Two pages could have the same HTML content, and yet look dramatically different due to different CSS stylesheets.
 
-We can even use classes/IDs with elements to select and style HTML. Lets add a short unordered list:
+We can even use classes/ids with elements to select and style HTML. Lets add a short unordered list:
 
 ```html
 <!DOCTYPE>
@@ -603,15 +604,15 @@ Imagine, we wanted a particular style to apply to all of the elements from the l
 
 ```css
 body {
-  background: azure;
+    background: azure;
 }
 
 p {
-  color: indigo;
+    color: indigo;
 }
 
 div {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 .comments {
@@ -625,41 +626,41 @@ div {
 }
 
 .first {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .second {
-  color: MidnightBlue;
+    color: MidnightBlue;
 }
 
 li {
-  text-align: center;
-  font-style: italic;
-  color: Tomato;
+    text-align: center;
+    font-style: italic;
+    color: Tomato;
 }
 
 li.why {
-  font-family: sans-serif;
-  font-size: 16px;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
 li#not {
-  font-family: serif;
-  font-size: 36px;
+    font-family: serif;
+    font-size: 36px;
 }
 ```
 
-Now, all our list items are centered but the top item has a different font than the bottom. What styles were inherited? What was overwritten?
+Now, all of our list items are centered but the top item has a different font than the bottom. Which styles were inherited? Which was overwritten?
 
 <!--9:55 5 minutes -->
 
-## Specificity in CSS - Intro
+## Specificity in CSS: Intro
 
-One of the most important concepts with CSS is specificity. Imagine you select an element by its class and give it some style; then, on the next line, you select the same element by its element name and its ID - how does the browser know what style to apply?  Well, every element gets a score and it's this score that dictates what CSS property is applied.
+One of the most important concepts with CSS is specificity. Imagine you select an element by its class and give it some style; then, on the next line, you select the same element by its element name and its id. How does the browser know what style to apply? Well, every element gets a score and it's this score that dictates which CSS property is applied.
 
 [Specificity Calculator](http://specificity.keegan.st/)
 
-Every selector has its place in the specificity hierarchy, and if two selectors apply to the same element, the one with higher specificity wins.  Overall, there are four distinct factors that define the specificity level of a given selector: inline styles, IDs, classes+attributes and elements.  You can calculate CSS specificity with the CSS Specificity Calculator:
+Every selector has its place in the specificity hierarchy, and if two selectors apply to the same element, the one with higher specificity wins. Overall, there are four distinct factors that define the specificity level of a given selector: inline styles, ids, classes+attributes, and elements. You can calculate CSS specificity with the CSS Specificity Calculator:
 
 <img src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png" style="width: 400px;" />
 
@@ -684,7 +685,7 @@ A couple of rules to think about:
 - More specific selectors beat less specific ones
 - id specificity > class specificity > tag specificity
 - Inline styles > Internal styles > External styles
-- !important trumps all of the above.
+- `!important` trumps all of the above.
 
 <!--10:00 5 minutes -->
 
@@ -696,7 +697,7 @@ CSS can be really fun or a total nightmare. You have to remember a few rules, bu
 
 <!--Think-pair-share -->
 
-- Describe the differences between classes and IDs.
+- Describe the differences between classes and ids.
 - Identify the popular CSS properties we used today.
 - What are the use cases for inline styling vs. internal/external style sheets?
 
